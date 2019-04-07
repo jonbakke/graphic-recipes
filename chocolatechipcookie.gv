@@ -1,0 +1,163 @@
+digraph chocolatechipcookie {
+
+    label="An Untested Chocolate Chip Cookie Recipe";
+    fontname="Times";
+    fontsize="30";
+    labelloc="top";
+    labeljust="right";
+    page="11,8.5";
+    margin="0.5";
+    nodesep="0.25";
+    ranksep="0.25";
+    mindist="0.25";
+    center="true";
+    size="10";
+
+    rankdir="LR";
+    ordering="out";
+
+    "flour" [shape=plaintext, fontname="Helvetica"];
+
+    "ap" [shape=plaintext, label="all purpose", fontname="Helvetica"];
+    "ap1" [shape=plaintext, label="66%", fontname="Helvetica"];
+    "ap2" [shape=plaintext, label="120g", fontname="Helvetica"];
+    "flour" -> "ap" [arrowhead=none, style=dotted];
+    "ap" -> "ap1" [arrowhead=none, style=dotted];
+    "ap1" -> "ap2" [arrowhead=none, style=dotted];
+    "ap2" -> "combine";
+
+    "ww" [shape=plaintext, label="whole wheat", fontname="Helvetica"];
+    "ww1" [shape=plaintext, label="33%", fontname="Helvetica"];
+    "ww2" [shape=plaintext, label="60g", fontname="Helvetica"];
+    "flour" -> "ww" [arrowhead=none, style=dotted];
+    "ww" -> "ww1" [arrowhead=none, style=dotted];
+    "ww1" -> "ww2" [arrowhead=none, style=dotted];
+    "ww2" -> "combine";
+
+    "powder" [shape=plaintext, label="baking powder", fontname="Helvetica"];
+    "powder1" [shape=plaintext, label="2%", fontname="Helvetica"];
+    "powder2" [shape=plaintext, label="3g", fontname="Helvetica"];
+    "powder" -> "powder1" [arrowhead=none, style=dotted];
+    "powder1" -> "powder2" [arrowhead=none, style=dotted];
+    "powder2" -> "combine";
+    
+    "salt" [shape=plaintext, fontname="Helvetica"];
+    "salt1" [shape=plaintext, label="2%", fontname="Helvetica"];
+    "salt2" [shape=plaintext, label="3g", fontname="Helvetica"];
+    "salt" -> "salt1" [arrowhead=none, style=dotted];
+    "salt1" -> "salt2" [arrowhead=none, style=dotted];
+    "salt2" -> "combine";
+   
+    "chips" [shape=plaintext, label="chocolate chips", fontname="Helvetica"];
+    "chips1" [shape=plaintext, label="100%", fontname="Helvetica"];
+    "chips2" [shape=plaintext, label="~170g\n(1/2 package)", fontname="Helvetica"];
+    "chips" -> "chips1" [arrowhead=none, style=dotted];
+    "chips1" -> "chips2" [arrowhead=none, style=dotted];
+    "chips2" -> "combine";
+
+    "sugar" [shape=plaintext, fontname="Helvetica"];
+
+    "brown" [shape=plaintext, fontname="Helvetica"];
+    "brown1" [shape=plaintext, label="55%", fontname="Helvetica"];
+    "brown2" [shape=plaintext, label="100g", fontname="Helvetica"];
+    "sugar" -> "brown" [arrowhead=none, style=dotted];
+    "brown" -> "brown1" [arrowhead=none, style=dotted];
+    "brown1" -> "brown2" [arrowhead=none, style=dotted];
+    "brown2" -> "cream";
+
+    "granulated" [shape=plaintext, fontname="Helvetica"];
+    "granulated1" [shape=plaintext, label="30%", fontname="Helvetica"];
+    "granulated2" [shape=plaintext, label="55g", fontname="Helvetica"];
+    "sugar" -> "granulated" [arrowhead=none, style=dotted];
+    "granulated" -> "granulated1" [arrowhead=none, style=dotted];
+    "granulated1" -> "granulated2" [arrowhead=none, style=dotted];
+    "granulated2" -> "cream";
+
+    "butter" [shape=plaintext, label="unsalted butter", fontname="Helvetica"];
+    "butter1" [shape=plaintext, label="66%", fontname="Helvetica"];
+    "butter2" [shape=plaintext, label="115g\n(1/2 cup)\n(1 stick)", fontname="Helvetica"];
+    "butter" -> "butter1" [arrowhead=none, style=dotted];
+    "butter1" -> "butter2" [arrowhead=none, style=dotted];
+    "butter2" -> "cream";
+
+    "vanilla" [shape=plaintext, label="vanilla extract", fontname="Helvetica"];
+    "vanilla1" [shape=plaintext, label="2%", fontname="Helvetica"];
+    "vanilla2" [shape=plaintext, label="4g\n(1 tsp)", fontname="Helvetica"];
+    "vanilla" -> "vanilla1" [arrowhead=none, style=dotted];
+    "vanilla1" -> "vanilla2" [arrowhead=none, style=dotted];
+    "vanilla2" -> "cream";
+
+    "egg" [shape=plaintext, fontname="Helvetica"];
+    "egg1" [shape=plaintext, label="33%", fontname="Helvetica"];
+    "egg2" [shape=plaintext, label="1 large", fontname="Helvetica"];
+    "egg" -> "egg1" [arrowhead=none, style=dotted];
+    "egg1" -> "egg2" [arrowhead=none, style=dotted];
+    "egg2" -> "cream";
+
+    "combine" [shape=plaintext, fontname="Helvetica"];
+    "cream" [shape=plaintext, fontname="Helvetica"];
+    "portion" [fontname="Helvetica"];
+    "preheat" [shape="parallelogram", label="preheat:\n375°F\n190°C", fontname="Helvetica"];
+    "rest" [shape="diamond", label="optional:\nrest", fontname="Helvetica"];
+    "cool" [fontname="Helvetica"];
+    "eat" [fontname="Helvetica"];
+
+
+    "bake" [label="bake\n10-14 minutes", fontname="Helvetica"];
+    "combine" -> "incorporate";
+    "cream" -> "incorporate";
+    "incorporate" -> "portion";
+    "incorporate" -> "rest" -> "portion" [style=dotted];
+    "portion" -> "bake";
+    "bake" -> "cool";
+    "cool" -> "eat";
+    
+    "preheat" -> "bake" [arrowhead="none"];
+
+    "rest" -> "eat" [style=dotted, arrowhead=vee];
+    "portion" -> "eat" [style=dotted, arrowhead=vee];
+    "bake" -> "eat" [style=dotted, arrowhead=vee];
+
+    "ap2" -> "ww2" -> "powder2" -> "salt2" -> "chips2" [arrowhead=none, style=invisible];
+    {rank=same; "ap2"; "ww2"; "powder2"; "salt2"; "chips2"}
+
+    "brown2" -> "granulated2" -> "butter2" [arrowhead=none, style=invisible];
+    "butter2" -> "vanilla2" -> "egg2" [arrowhead=none, style=invisible];
+    {rank=same; "brown2"; "granulated2"; "butter2"; "vanilla2"; "egg2"}
+    {rank=same; "ap2"; "brown2"}
+
+    "flour" -> "sugar" [arrowhead=none, style=invisible, constraint=false];
+    {rank=same; "flour"; "sugar"}
+
+    "combine" -> "cream" [arrowhead=none, style=invisible];
+
+    "combine" [shape=circle, fontname="Helvetica"];
+    "cream" [shape=circle, fontname="Helvetica"];
+    "incorporate" [shape=circle, fontname="Helvetica"];
+
+    "label1" [shape=rectangle, label="Baker's\nPercentages", fontname="Helvetica"];
+    {rank=same; "label1"; "ap1"}
+    "label1" -> "ap1" [arrowhead=none, style=invisible];
+
+    "label2" [shape=rectangle, label="Measures", fontname="Helvetica"];
+    {rank=same; "label2"; "ap2"}
+    "label2" -> "ap2" [arrowhead=none, style=invisible];
+
+    "time0" [shape=none; label=""];
+    {rank=same; "time0"; "egg2"}
+
+    "time1" [shape=plaintext; label="5 minutes", fontname="Helvetica"];
+    {rank=same; "time1"; "combine"}
+
+    "time2" [shape=plaintext; label="10 minutes", fontname="Helvetica"];
+    "time3" [shape=plaintext; label="1 minute", fontname="Helvetica"];
+    "time4" [shape=plaintext; label="overnight\nin fridge", fontname="Helvetica"];
+    "time5" [shape=plaintext; label="2 minutes", fontname="Helvetica"];
+    "time6" [shape=plaintext; label="10-14 minutes", fontname="Helvetica"];
+    "time7" [shape=plaintext; label="20 minutes", fontname="Helvetica"];
+
+    "time0" -> "time1" -> "time2" -> "time3" -> "time4" [arrowhead=none, style=invisible];
+    "time4" -> "time5" -> "time6" -> "time7" [arrowhead=none, style=invisible];
+    
+    "egg2" -> "time1" [arrowhead=none, style=invisible];
+}

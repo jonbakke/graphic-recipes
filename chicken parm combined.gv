@@ -1,0 +1,268 @@
+digraph chickenparm1 {
+
+label="Chicken Parmesan";
+fontname="Times";
+fontsize="30";
+labelloc="top";
+labeljust="right";
+page="11,8.5";
+margin="0.5";
+nodesep="0.125";
+ranksep="0.25";
+mindist="0.5";
+center="true";
+size="10.5";
+
+rankdir="LR";
+ordering="out";
+
+"main1" [shape=plaintext, fontname="Helvetica", label="sauce"];
+
+"ing1-1" [shape=plaintext, fontname="Helvetica", label="tomatoes"];
+"ing1-1d" [shape=plaintext, fontname="Helvetica", label="whole, peeled\ndrained"];
+"ing1-1q" [shape=plaintext, fontname="Helvetica", label="1 can\n(28 ounce)"];
+"ing1-1" -> "ing1-1d" -> "ing1-1q" [style=dotted, arrowhead=none];
+
+"ing1-2" [shape=plaintext, fontname="Helvetica", label="olive oil"];
+"ing1-2d" [shape=plaintext, fontname="Helvetica", label="extra virgin"];
+"ing1-2q" [shape=plaintext, fontname="Helvetica", label="2 Tbsp"];
+"ing1-2" -> "ing1-2d" -> "ing1-2q" [style=dotted, arrowhead=none];
+
+"ing1-3" [shape=plaintext, fontname="Helvetica", label="garlic"];
+"ing1-3d" [shape=plaintext, fontname="Helvetica", label="minced"];
+"ing1-3q" [shape=plaintext, fontname="Helvetica", label="2 cloves"];
+"ing1-3" -> "ing1-3d" -> "ing1-3q" [style=dotted, arrowhead=none];
+
+"ing1-4" [shape=plaintext, fontname="Helvetica", label="basil"];
+"ing1-4d" [shape=plaintext, fontname="Helvetica", label="fresh\nchopped"];
+"ing1-4q" [shape=plaintext, fontname="Helvetica", label="2 Tbsp"];
+"ing1-4" -> "ing1-4d" -> "ing1-4q" [style=dotted, arrowhead=none];
+
+"ing1-5" [shape=plaintext, fontname="Helvetica", label="sugar"];
+"ing1-5d" [shape=plaintext, fontname="Helvetica", label=""];
+"ing1-5q" [shape=plaintext, fontname="Helvetica", label="1/4 tsp"];
+"ing1-5" -> "ing1-5d" -> "ing1-5q" [style=dotted, arrowhead=none];
+
+"ing1-6" [shape=plaintext, fontname="Helvetica", label="salt"];
+"ing1-6d" [shape=plaintext, fontname="Helvetica", label=""];
+"ing1-6q" [shape=plaintext, fontname="Helvetica", label=""];
+"ing1-6" -> "ing1-6d" -> "ing1-6q" [style=dotted, arrowhead=none];
+
+{rank=same; "ing1-1q"; "ing1-2q"; "ing1-3q"; "ing1-4q"; "ing1-5q"; "ing1-6q"}
+"main1" -> "ing1-1" [arrowhead=none, style=invisible];
+"main1" -> { "ing1-2"; "ing1-3"; "ing1-4"; "ing1-5"; "ing1-6"} [arrowhead=none, style=invisible, constraint=false];
+
+"main2"  [shape=plaintext, fontname="Helvetica", label="chicken\nand\nspaghetti"];
+
+"ing2-1" [shape=plaintext, fontname="Helvetica", label="flour"];
+"ing2-1d" [shape=plaintext, fontname="Helvetica", label="all-purpose"];
+"ing2-1q" [shape=plaintext, fontname="Helvetica", label="1/4 cup"];
+"ing2-1" -> "ing2-1d" -> "ing2-1q" [style=dotted, arrowhead=none];
+
+"ing2-2" [shape=plaintext, fontname="Helvetica", label="egg"];
+"ing2-2d" [shape=plaintext, fontname="Helvetica", label=""];
+"ing2-2q" [shape=plaintext, fontname="Helvetica", label="1 large"];
+"ing2-2" -> "ing2-2d" -> "ing2-2q" [style=dotted, arrowhead=none];
+
+"ing2-3" [shape=plaintext, fontname="Helvetica", label="panko"];
+"ing2-3d" [shape=plaintext, fontname="Helvetica", label="bread crumbs"];
+"ing2-3q" [shape=plaintext, fontname="Helvetica", label="3/4 cup"];
+"ing2-3" -> "ing2-3d" -> "ing2-3q" [style=dotted, arrowhead=none];
+
+"ing2-4" [shape=plaintext, fontname="Helvetica", label="Parmesan\ncheese"];
+"ing2-4d" [shape=plaintext, fontname="Helvetica", label="grated"];
+"ing2-4q" [shape=plaintext, fontname="Helvetica", label="1/4 cup"];
+"ing2-4" -> "ing2-4d" -> "ing2-4q" [style=dotted, arrowhead=none];
+
+"ing2-5" [shape=plaintext, fontname="Helvetica", label="chicken"];
+"ing2-5d" [shape=plaintext, fontname="Helvetica", label="boneless, skinless\ntrimmed & pounded\nto 1/2\" thickness"];
+"ing2-5q" [shape=plaintext, fontname="Helvetica", label="2 breasts\n(6- to 8-ounce)"];
+"ing2-5" -> "ing2-5d" -> "ing2-5q" [style=dotted, arrowhead=none];
+
+"ing2-6" [shape=plaintext, fontname="Helvetica", label="salt and pepper"];
+"ing2-6d" [shape=plaintext, fontname="Helvetica", label=""];
+"ing2-6q" [shape=plaintext, fontname="Helvetica", label=""];
+"ing2-6" -> "ing2-6d" -> "ing2-6q" [style=dotted, arrowhead=none];
+
+"ing2-7" [shape=plaintext, fontname="Helvetica", label="vegetable oil"];
+"ing2-7d" [shape=plaintext, fontname="Helvetica", label=""];
+"ing2-7q" [shape=plaintext, fontname="Helvetica", label="6 Tbsp"];
+"ing2-7" -> "ing2-7d" -> "ing2-7q" [style=dotted, arrowhead=none];
+
+"ing2-8" [shape=plaintext, fontname="Helvetica", label="whole-milk\nmozzarella\ncheese"];
+"ing2-8d" [shape=plaintext, fontname="Helvetica", label="shredded"];
+"ing2-8q" [shape=plaintext, fontname="Helvetica", label="1 ounce\n(1/4 cup)"];
+"ing2-8" -> "ing2-8d" -> "ing2-8q" [style=dotted, arrowhead=none];
+
+"ing2-9" [shape=plaintext, fontname="Helvetica", label="fontina cheese"];
+"ing2-9d" [shape=plaintext, fontname="Helvetica", label="shredded"];
+"ing2-9q" [shape=plaintext, fontname="Helvetica", label="1 ounce\n(1/4 cup)"];
+"ing2-9" -> "ing2-9d" -> "ing2-9q" [style=dotted, arrowhead=none];
+
+"ing2-10" [shape=plaintext, fontname="Helvetica", label="basil"];
+"ing2-10d" [shape=plaintext, fontname="Helvetica", label="chopped fresh"];
+"ing2-10q" [shape=plaintext, fontname="Helvetica", label="1 Tbsp"];
+"ing2-10" -> "ing2-10d" -> "ing2-10q" [style=dotted, arrowhead=none];
+
+"ing2-11" [shape=plaintext, fontname="Helvetica", label="spaghetti"];
+"ing2-11d" [shape=plaintext, fontname="Helvetica", label=""];
+"ing2-11q" [shape=plaintext, fontname="Helvetica", label="4 ounces"];
+"ing2-11" -> "ing2-11d" -> "ing2-11q" [style=dotted, arrowhead=none];
+
+{rank=same; "ing2-1q"; "ing2-2q"; "ing2-3q"; "ing2-4q"; "ing2-5q"; "ing2-6q"}
+{rank=same; "ing2-6q"; "ing2-7q"; "ing2-8q"; "ing2-9q"; "ing2-10q"; "ing2-11q"}
+{rank=same; "ing1-1q"; "ing2-1q"}
+"main2" -> "ing2-1" [arrowhead=none, style=invisible];
+"main2" -> { "ing2-11"; "ing2-2"; "ing2-3"; "ing2-4"; "ing2-5"; "ing2-6"} [arrowhead=none, style=invisible, constraint=false];
+"main2" -> { "ing2-7"; "ing2-8"; "ing2-9"; "ing2-10"} [arrowhead=none, style=invisible, constraint=false];
+
+/* Order main1 then main2 */
+{rank=same; "main1"; "main2"}
+"main1" -> "main2" [arrowhead=none, style=invisible, constraint=false];
+
+/*
+ * Begin main1
+ */
+
+subgraph clustertomatosauce {
+label="Tomato Sauce";
+fontsize=20;
+labeljust=center;
+
+"main1-step1" [shape=plaintext, fontname="Helvetica", label="pulse until\ncoarsely ground\n(6 to 8 pulses)\nin food processor"];
+"ing1-1q" -> "main1-step1"
+
+"main1-step2" [shape=plaintext, fontname="Helvetica", label="cook oil & garlic\nuntil fragrant but not browned\nover medium heat\nin medium saucepan"];
+"ing1-2q" -> "main1-step2"
+"ing1-3q" -> "main1-step2"
+
+"main1-step3" [shape=plaintext, fontname="Helvetica", label="stir in tomatoes\nsimmer\nuntil slightly thickened"];
+"main1-step1" -> "main1-step3"
+"main1-step2" -> "main1-step3"
+
+"main1-step4" [shape=plaintext, fontname="Helvetica", label="remove from heat\nadd basil and sugar\nseason to taste\nwith salt and sugar\nthen cover to keep warm"];
+
+"ing1-4q" -> "main1-step4"
+"ing1-5q" -> "main1-step4"
+"ing1-6q" -> "main1-step4"
+"main1-step3" -> "main1-step4"
+}
+
+subgraph clusterdresschicken {
+label="Dress Chicken";
+fontsize=20;
+labeljust=center;
+
+"main2-step2" [shape=plaintext, fontname="Helvetica", label="spread flour\nin shallow dish no.1"];
+"ing2-1q" -> "main2-step2";
+
+"main2-step3" [shape=plaintext, fontname="Helvetica", label="beat egg\nin shallow dish no.2"];
+"ing2-2q" -> "main2-step3";
+
+"main2-step4" [shape=plaintext, fontname="Helvetica", label="combine\npanko and Parmesan\nin shallow dish no.3"];
+"ing2-3q" -> "main2-step4"
+"ing2-4q" -> "main2-step4"
+
+"main2-step5" [shape=plaintext, fontname="Helvetica", label="pat chicken dry\nand season with\nsalt and pepper"];
+"ing2-5q" -> "main2-step5"
+"ing2-6q" -> "main2-step5"
+
+"main2-step6" [shape=plaintext, fontname="Helvetica", label="one breast at a time\ndredge in flour\ndip in egg\ncoat with panko mixture\npressing gently to adhere"];
+"main2-step2" -> "main2-step6"
+"main2-step3" -> "main2-step6"
+"main2-step4" -> "main2-step6"
+"main2-step5" -> "main2-step6"
+}
+
+subgraph clusterpanfrychicken {
+label="Pan Fry Chicken";
+fontsize=20;
+labeljust=center;
+
+"main2-step2" [shape=plaintext, fontname="Helvetica", label="spread flour\nin shallow dish no.1"];
+"main2-step7" [shape=plaintext, fontname="Helvetica", label="line large plate\nwith 3 layers\nof paper towels"];
+
+"main2-step8" [shape=plaintext, fontname="Helvetica", label="heat oil\nover medium-high heat\nuntil shimmering\nin 10\" nonstick skillet"];
+"ing2-7q" -> "main2-step8"
+
+"main2-step9" [shape=plaintext, fontname="Helvetica", label="cook chicken in skillet\nuntil golden brown\non both sides"];
+"main2-step6" -> "main2-step9"
+"main2-step8" -> "main2-step9"
+
+"main2-step10" [shape=plaintext, fontname="Helvetica", label="drain chicken\non plate"];
+"main2-step7" -> "main2-step10"
+"main2-step9" -> "main2-step10"
+}
+
+subgraph clusterbroilchicken {
+label="Broil Chicken";
+fontsize=20;
+labeljust=center;
+
+"main2-step1" [shape=plaintext, fontname="Helvetica", label="place oven rack\n4\"/10cm below broiler\nand heat broiler"];
+{rank=same; "main2-step1"; "main2-step10"}
+
+"main2-step11" [shape=plaintext, fontname="Helvetica", label="transfer chicken\nto rimmed baking sheet"];
+"main2-step10" -> "main2-step11"
+
+"main2-step12" [shape=plaintext, fontname="Helvetica", label="combine\nmozzarella & fontina\nin a bowl"];
+"ing2-8q" -> "main2-step12"
+"ing2-9q" -> "main2-step12"
+
+"main2-step13" [shape=plaintext, fontname="Helvetica", label="sprinkle cheese\nover chicken\ncovering entire surface"];
+"main2-step11" -> "main2-step13"
+"main2-step12" -> "main2-step13"
+
+"main2-step14" [shape=plaintext, fontname="Helvetica", label="broil\nuntil cheese melts\nand begins to brown"];
+"main2-step1" -> "main2-step14"
+"main2-step13" -> "main2-step14"
+}
+
+subgraph clusterspaghetti {
+label="Spaghetti";
+fontsize=20;
+labeljust=right;
+
+"main3-step1" [shape=plaintext, fontname="Helvetica", label="boil 4 quarts water\nin large pot"];
+"main1-step4" -> "main3-step1" [arrowhead=none, style=invisible];
+
+"main3-step2" [shape=plaintext, fontname="Helvetica", label="add pasta\nand 1 Tbsp salt\nand cook until al dente"]; 
+"main3-step1" -> "main3-step2"
+"ing2-11q" -> "main3-step2"
+
+"main3-step3" [shape=plaintext, fontname="Helvetica", label="reserve\n1/2 cup pasta water"];
+"main3-step2" -> "main3-step3"
+
+"main3-step4" [shape=plaintext, fontname="Helvetica", label="drain pasta\nthen return to pot"];
+"main3-step2" -> "main3-step4"
+"main3-step3" -> "main3-step4" [arrowhead=none; style=invisible];
+
+"main3-step5" [shape=plaintext, fontname="Helvetica", label="add remaining sauce\nand toss to combine"];
+"main1-step4" -> "main3-step5"
+"main3-step4" -> "main3-step5"
+
+"main3-step6" [shape=plaintext, fontname="Helvetica", label="adjust consistency\nwith pasta water\nand season\nwith salt and pepper"];
+"main3-step3" -> "main3-step6"
+"main3-step5" -> "main3-step6"
+}
+
+subgraph clusterserve {
+label="Serve";
+fontsize=20;
+labeljust=left;
+
+"main2-step15" [shape=plaintext, fontname="Helvetica", label="transfer chicken\nto serving platter"];
+"main2-step14" -> "main2-step15"
+
+"main2-step16" [shape=plaintext, fontname="Helvetica", label="top each breast\nwith 2 Tbsp tomato sauce\nand sprinkle with basil"];
+"ing2-10q" -> "main2-step16"
+"main1-step4" -> "main2-step16"
+"main2-step15" -> "main2-step16"
+
+"serve" [shape=plaintext, fontname="Helvetica"];
+"main3-step6" -> "serve"
+"main2-step16" -> "serve"
+{rank=same; "main2-step16"; "main3-step5"}
+}
+
+}
